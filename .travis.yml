@@ -3,7 +3,7 @@ node_js:
   - stable
   cache:
     directories:
-    - node_modules
+      - node_modules
 script:
   - npm test
   - npm run build
@@ -15,4 +15,4 @@ deploy:
     branch: master
   token:
     secure: AFqxOMDR8zuLGODCeuTpUxlkyGu0xSteSWifXS2j5hKquIdISi0QLpyj1aljXBMvxPUQFmUhy9dgpf++wcGe9VPVwSa68wO4oC655Xyapyss5wn6Pzxbrl3Gp+7hZXb+aJxuqfZL9LciskjH7vPFgLdDvnmw0AHuHZU+Dzb/78XGdjwS7hBODbvnGSVwHqPDJqxo2kAY2NMesxqPqYi/nbHQHWFfgAFAZ0NzdSSXA3SQkyweyZFlxs6au8UBhjyU/cOecr6rNlo/g1nehxek9ETKQeHV3UJoOMskDnqahOw3EuHBaj2BhBSi4Bc+z4qp2EXfamMPLLeyOicXG3ssj0ovK6ABaCf53TcNMKwlOcUZhDa7BQ7xdQPoCu/jt7z3GWFtGpKnzTacMIw7aJTsvxdpLozEt3w7UlBFODUHkj4Civuclz5NDK9E2QJ363LkF5bzPMnJdqA/ui9mUrawJ04FsGL6DC0YZhX4HcGZpLA+ckrIhOU3OK8VRC3ZhD70d86S/9Xs8EZ5KrQyTUboxSXlTCph3agTGXXTQcZjIzjoCFHHJ86FGqbDqjqgkaENwOxMkgRq220wcqrod9qxCQtZVdFqlzA4VECfn9C0sKAtjMapr3HvmjhV2U38E2LKN6GjeLFak64F9417LpNq8qtytr0VKPTsyqmB1TsWTik=
-  project: discovering-js
+  project: 'discovering-js'
