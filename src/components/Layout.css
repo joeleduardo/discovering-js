@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+header, footer, figure, section, ul {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: block;
+  background-color: #efefef;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.wrapper {
+  margin: auto;
+}
+
+@media screen and (min-width: 850px) {
+  .wrapper {
+    max-width: 940px;
+  }
+}

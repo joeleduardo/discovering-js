@@ -1,0 +1,18 @@
+.card {
+  background-color: #fff;
+  border: solid 1px #efefef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .08);
+}
+
+.card-image {
+  background-color: #efefef;
+  height: 160px;
+}
+
+.card-content {
+  padding: .5rem;
+}
+
+.card-content h1 {
+  color: #444d56;
+}
