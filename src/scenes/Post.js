@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes  from 'prop-types';
 import Markdown from 'react-markdown';
-import Layout from '../components/Layout';
 import './Post.css';
 import '../assets/github-markdown.css';
 
@@ -28,7 +27,7 @@ class Post extends React.Component {
 
   render() {
     return(
-      <Layout>
+      <article>
         <figure>
           <img width='100%' height='350px' alt='Main'/>
         </figure>
@@ -42,7 +41,7 @@ class Post extends React.Component {
             <Markdown source={this.state.readmeContent}/>
           </article>
         </section>
-      </Layout>
+      </article>
     )
   }
 }

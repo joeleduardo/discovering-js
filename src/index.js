@@ -1,13 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Loadable from 'react-loadable';
 import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 import store from './redux/store';
-import App from './router/App';
-import registerServiceWorker from './registerServiceWorker';
+import App from './App';
 
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root'));
-registerServiceWorker();
+//import registerServiceWorker from './registerServiceWorker';
+
+window.onload = () => {
+  Loadable.preloadReady().then(() => {
+    ReactDOM.hydrate(
+      <Provider store={store}>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </Provider>,
+      document.getElementById('root')
+    );
+  });
+};
+
+//registerServiceWorker();
